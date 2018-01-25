@@ -1,18 +1,30 @@
-require_relative 'game'
-require_relative 'player'
-require_relative "app"
+
 
 class Board
-attr_accessor :board
+  attr_accessor :contenu
 
   #Initialiser le tableau de jeu 3x3
-  def initialize(board)
-
+  def initialize()
+    @contenu = [
+      ["t", "i", "c"],
+      ["t", "a", "c"],
+      ["t", "o", "e"]
+    ]
   end
 
   #Afficher l'état du tableau
-  def afficher_board
-    
+  def afficher()
+    puts "-------------"
+    3.times do |ligne_index|
+      # puts " ligne #{ligne_index}"
+      print '|'
+      3.times do |colonne_index|
+        # print " #{colonne_index} |"
+        print " #{@contenu[ligne_index][colonne_index]} |"
+      end
+      puts
+      puts "----+---+----"
+    end
   end
 
   def save_board
