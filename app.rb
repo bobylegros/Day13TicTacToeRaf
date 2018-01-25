@@ -1,40 +1,21 @@
-# require_relative 'game'
-# require_relative 'player'
-require_relative 'board'
+require_relative 'game'
 
+#
+#
+# mon_plateau = Board.new
+# mon_plateau.afficher
 
-# 3.times do |index|
-#   puts "ligne #{index}"
-#   3.times do |colonne_index|
-#     print " #{colonne_index} |"
-#   end
-# end
+# print "Quel est ton nom ?"
+# nom_utilisateur = gets.chomp
+#
+# player_1 = Player.new(nom_utilisateur)
+#
+# p player_1
 
-
-# afficher_board
-
-# def boucle_each
-#   times.each do
-#     puts "_________________"
-#   end
-
-
-
-# def foo
-#   puts "-------------"
-#   3.times do |ligne_index|
-#     # puts " ligne #{ligne_index}"
-#     print '|'
-#     3.times do |colonne_index|
-#       print  " #{colonne_index} |"
-#     end
-#     puts
-#     puts "----+---+----"
-#   end
-# end
-
-# boucle_each
-# foo
+mon_jeu_tic_tac_toe = Game.new
+mon_jeu_tic_tac_toe.inscription_joueurs
 
 mon_plateau = Board.new
 mon_plateau.afficher
+
+# puts "C'est à #{@joueurs[index].name} de jouer !"

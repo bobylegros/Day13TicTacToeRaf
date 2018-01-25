@@ -1,20 +1,12 @@
-require_relative 'game'
-require_relative 'board'
-require_relative "app"
+
 
 class Player
+  attr_reader :name
+  attr_reader :mark
 
-  def initialize(joueur)
-
+  def initialize(name, mark)
+    @name = name
+    @mark = mark
   end
-
-  def signe
-
-  end
-
-
-
-
-
 
 end
