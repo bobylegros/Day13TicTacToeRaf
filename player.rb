@@ -1,6 +1,6 @@
 require_relative 'game'
 require_relative 'board'
-require_relative 'play'
+require_relative "app"
 
 class Player
 
@@ -8,13 +8,9 @@ class Player
 
   end
 
+  def signe
 
-
-
-
-
-
-
+  end
 
 
 
