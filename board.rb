@@ -27,10 +27,15 @@ class Board
     end
   end
 
-  def save_board
+#        TEST
 
-  end
-
+  # def update(ligne_index, colonne_index, @mark)
+  #   if @cases[ligne_index][colonne_index] == "-"
+  #     @cases[ligne_index][colonne_index] = @mark
+  #   else
+  #     puts "Try again..."
+  #   end
+#        TEST
 end
 
 

@@ -1,21 +1,27 @@
 require_relative 'game'
 
-#
-#
-# mon_plateau = Board.new
-# mon_plateau.afficher
 
-# print "Quel est ton nom ?"
-# nom_utilisateur = gets.chomp
-#
-# player_1 = Player.new(nom_utilisateur)
-#
-# p player_1
+puts "        *********************************"
+puts "        *                               *"
+puts "        *          TIC TAC TOE          *"
+puts "        *                               *"
+puts "        *********************************"
 
-mon_jeu_tic_tac_toe = Game.new
+
+
+puts
+puts
+puts "                    *SART!* "
+puts
+puts
+
+
+mon_jeu_tic_tac_toe = Game.new()
 mon_jeu_tic_tac_toe.inscription_joueurs
 
-mon_plateau = Board.new
-mon_plateau.afficher
+
+
+# mon_plateau = Board.new()
+# mon_plateau.afficher()
 
 # puts "C'est à #{@joueurs[index].name} de jouer !"
